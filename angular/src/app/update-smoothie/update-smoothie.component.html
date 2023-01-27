@@ -1,0 +1,56 @@
+<h3>Update Smoothie</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="smoothie.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">vitamin A</label>
+      <input type="text" class="form-control" id="vitaminA" [(ngModel)]="smoothie.vitaminA" name="vitaminA">
+    </div>
+
+    <div class="form-group">
+      <label for="name">vitamin B</label>
+      <input type="text" class="form-control" id="vitaminB" [(ngModel)]="smoothie.vitaminB" name="vitaminB">
+    </div>
+
+    <div class="form-group">
+      <label for="name">vitamin C</label>
+      <input type="text" class="form-control" id="vitaminC" [(ngModel)]="smoothie.vitaminC" name="vitaminC">
+    </div>
+
+    <div class="form-group">
+      <label for="name">calcium</label>
+      <input type="text" class="form-control" id="calcium" [(ngModel)]="smoothie.calcium" name="calcium">
+    </div>
+
+    <div class="form-group">
+      <label for="name">iron</label>
+      <input type="text" class="form-control" id="iron" [(ngModel)]="smoothie.iron" name="iron">
+    </div>
+
+    <div class="form-group">
+      <label for="name">protein</label>
+      <input type="text" class="form-control" id="protein" [(ngModel)]="smoothie.protein" name="protein">
+    </div>
+
+    <div class="form-group">
+      <label for="name">carbohydrates</label>
+      <input type="text" class="form-control" id="carbohydrates" [(ngModel)]="smoothie.carbohydrates" name="carbohydrates">
+    </div>
+
+    <div class="form-group">
+      <label for="name">carbohydrates</label>
+      <input type="text" class="form-control" id="cholesterol" [(ngModel)]="smoothie.cholesterol" name="cholesterol">
+    </div>
+
+    <div class="form-group">
+      <label for="name">fat</label>
+      <input type="text" class="form-control" id="fat" [(ngModel)]="smoothie.fat" name="fat">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

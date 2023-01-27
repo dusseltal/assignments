@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Smoothie List</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Vitamin A </th>
+          <th>carbohydrates </th>
+          <th>calcium</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let smoothie of smoothies | async">
+          <td>{{smoothie.name}}</td>
+          <td>{{smoothie.vitaminA}}</td>
+          <td>{{smoothie.carbohydrates}}</td>
+          <td>{{smoothie.calcium}}</td>
+          <td><button (click)="deleteSmoothie(smoothie.id)" class="btn btn-danger">Delete</button>
+              <button (click)="updateSmoothie(smoothie.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+              <button (click)="smoothieDetails(smoothie.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
